@@ -151,20 +151,6 @@ body {
     margin-left: 24rem;
 }
 
-.input-forget {
-   padding-left: 23rem;
-   padding-top: 2rem;
-}
-
-.forget-password {
-    color: rgba(58, 61, 66, 0.8);
-    text-decoration: none;
-}
-
-.forget-password:hover {
-    color: #6379F4;
-}
-
 
 /* Right side button and label */
 .main-button {
