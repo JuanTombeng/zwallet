@@ -1,0 +1,239 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Nunito Sans;
+    background-color: #FAFCFF;
+    color: #3A3D42;
+}
+
+/* Navbar Container Area */
+
+.box {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    background-color: #fff;
+    display: flex;
+    padding: 0 10rem;
+    height: 14vh;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-column.left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.navbar-column.right {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    line-height: 31px;
+}
+
+.brand.text-primary {
+    display: flex;
+    color: #6379F4;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 40px;
+
+}
+
+.user-name {
+    margin: 0;
+}
+
+
+/* Main Container Area */
+
+.container.main-container {
+    height: 73vh;
+    margin: 31px 20rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar Menu Area */
+
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+}
+
+.sidebar-menu.up {
+    display: flex;
+    flex: 3;
+}
+
+.sidebar-menu.bottom {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+    .sidebar-menu.dashboard {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar-menu.logout {
+        display: flex;
+        flex-direction: row;
+    }
+
+        .dashboard-icon {
+            padding-left: 3rem;
+        }
+
+        li {
+            padding: 2rem;
+            list-style: none;
+        }
+
+
+    .sidebar-menu.dashboard.button {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+/* Transaction Wrapper Area */
+.transaction-wrapper {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.transaction-top {
+    display: flex;
+    flex: 1;
+}
+
+.transaction-bottom {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+    .item-1.top {
+        display: flex;
+        flex: 1;
+    }
+
+    .item-1.bottom {
+        display: flex;
+        flex: 2;
+    }
+
+    .item-1.bottom.wrapper {
+        display: flex;
+    }
+
+.item-1.user-picture {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.item-1.history-info {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+    .transfer-user-name {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .transfer-method {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+.item-1.transfer-amount {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+    .transfer-amount {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .red {
+        color: #FF5B37;
+    }
+
+    .green {
+        color: #1EC15F;
+    }
+
+
+.transaction-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 3rem;
+}
+
+.transaction-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    padding-left: 3rem;
+}
+
+
+/* Footer Area */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: #6379F4;
+    padding: 0 10rem;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFF;
+}
+
+    .footer.left {
+        font-weight: 400;
+        
+    }
+
+    .footer.right {
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-title {
+        display: flex;
+        padding: 0 2rem;
+    }
