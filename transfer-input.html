@@ -12,10 +12,10 @@
     <title>Zwallet Transfer Page</title>
 </head>
 <body>
-    <section class="navbar">
+    <nav class="navbar">
         <section class="navbar-container">
             <section class="navbar-column left">
-                <a class="navbar-brand-title" href="./home.html">Zwallet</a>
+                <h2 class="brand text-primary">Zwallet</h2>
             </section>
             <section class="navbar-column right">
                 <img src="./src/images/pic1.svg" alt="user-profile" class="user-pict" width="52" height="52">
@@ -50,16 +50,10 @@
                 <i class="icon fas fa-sign-out-alt"></i>
             </section>
         </aside>
-        <section class="box transaction-wrapper"> <!-- Flex 4 with sidebar menu -->
-            <section class="transaction-top"> <!-- Flex 0.5 with transaction bottom -->
-                <h2 class="transaction-title">Search Receiver</h2>
-                <section class="input-form">
-                    <i class="search-icon fas fa-search"></i>
-                    <input type="text" class="form-search" placeholder="Search reveiver here">
-                </section>
-            </section>
-            <section class="transaction-bottom"> <!-- Flex 3 with transaction bottom -->
-                <a href="./home.html" class="box item-wrapper select">
+        <section class="box transaction-wrapper"> <!-- Flex 3 with sidebar menu -->
+            <section class="transaction-top">
+                <h2 class="transaction-title">Transfer Money</h2>
+                <section class="box input item-wrapper">
                     <section class="item user-picture">
                         <img src="./src/images/tf-1.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
                     </section>
@@ -67,35 +61,33 @@
                         <h2 class="transfer-user-name">Samuel Suhi</h2>
                         <span class="transfer-method">+62 813-8492-9994</span>
                     </section>
-                </a>
-                <a href="./home.html" class="box item-wrapper">
-                    <section class="item user-picture">
-                        <img src="./src/images/tf-2.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
-                    </section>
-                    <section class="item history-info">
-                        <h2 class="transfer-user-name">Momo Taro</h2>
-                        <span class="transfer-method">+62 812-4343-6731</span>
-                    </section>
-                </a>
-                <a href="./home.html" class="box item-wrapper">
-                    <section class="item user-picture">
-                        <img src="./src/images/tf-3.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
-                    </section>
-                    <section class="item history-info">
-                        <h2 class="transfer-user-name">Jessica Keen</h2>
-                        <span class="transfer-method">+62 811-3452-5252</span>
-                    </section>
-                </a>
-                <a href="./home.html" class="box item-wrapper">
-                    <section class="item user-picture">
-                        <img src="./src/images/pic1.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
-                    </section>
-                    <section class="item history-info">
-                        <h2 class="transfer-user-name">Michael Le</h2>
-                        <span class="transfer-method">+62 810-4224-4613</span>
-                    </section>
-                </a>
+                </section>
             </section>
+            <section class="transaction-bottom">
+                <section class="input-amount-upper">
+                    <p class="transfer-parag blank">
+                        Type the amount you want to transfer and then
+                        press continue to the next steps.
+                    </p>
+                </section>
+                <section class="input-amount-center">
+                    
+                    <input type="number" class="input-nominal" placeholder="0.00">
+                    <h2 class="input-amount-status">
+                        Rp120.000 Available
+                    </h2>
+                </section>
+                <section class="input-form blank">
+                    
+                    <input type="text" class="input-form-note" placeholder="Add some notes">
+                    <i class="note-icon fas fa-pen"></i>
+                </section>
+                <section class="input-amount-lower">
+                    <a href="./home.html"><button class="form-button">Continue</button></a>
+                </section>
+            </section>
+                
+                
         </section>
     </main>
     <footer>
