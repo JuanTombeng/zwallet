@@ -8,134 +8,133 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d867f6532c.js" crossorigin="anonymous"></script>
     <title>Zwallet Home Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-column left">
-                <h2 class="brand text-primary">Zwallet</h2>
-            </div>
-            <div class="navbar-column right">
-                <img src="./src/images/pic1.svg" alt="user-profile" class="user-pict" width="52" height="52">
-                <div class="user-info">
-                    <h2 class="user-name">Robert Chandler</h2>
-                    <span class="user-phone">+62 8139 3877 7946</span>
-                </div>
-                <img src="./src/images/bell.svg" class="user-notif" width="24">
-            </div>
-        </div>
+    <nav>
+        <section class="navbar left">
+            <a class="navbar-brand-title" href="./home.html">Zwallet</a>
+        </section>
+        <section class="navbar right">
+            <img src="./src/images/pic1.svg" class="user-image" alt="user-profile" width="52" height="52">
+            <section class="user-info">
+                <h2 class="user-name">Robert Chandler</h2>
+                <span class="user-phone">+62 8139 3877 7946</span>
+            </section>
+            <i class="far fa-bell"></i>
+        </section>
     </nav>
-    <div class="container main-container">
-        <div class="sidebar-menu">
-            <img src="./src/images/active.svg" class="active-menu" alt=""  width="5px">
-            <div class="box box-sidebar">
-                
-                <ul class="top-sidebar">
-                    
-                    <li class="li"><img src="./src/images/dashboard.svg" class="dashboard-icon" alt=""  width="28px">Dashboard</li>
-                    <li class="li"><img src="./src/images/arrow-dash.svg" class="dashboard-icon" alt=""  width="28px">Transfer</li>
-                    <li class="li"><img src="./src/images/plus.svg" class="dashboard-icon" alt=""  width="28px">Top Up</li>
-                    <li class="li"><img src="./src/images/user.svg" class="dashboard-icon" alt=""  width="28px">Profile</li>
-                </ul>
-                <ul class="bottom-sidebar">
-                    <li class="li"><img src="./src/images/log-out.svg" class="dashboard-icon" alt=""  width="28px">Log Out</li>
-                </ul>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="balance-wrapper">
-                <div class="box box-balance">
-                    <div class="box-balance left">
-                        <h3 class="balance-top-title">Balance</h3>
-                        <h2 class="balance-amount-title">RP120.000</h2>
-                        <h2 class="balance-phone-title">+62 813-9387-7946</h2>
-                    </div>
-                    <div class="box-balance right">
-                        <div class="balance right transfer">
-                            <img src="./src/images/transfer.svg" alt="" class="icon transfer" width="40">
+    <section class="container">
+        <aside class="sidebar-menu box"> <!-- Flex 1 with main -->
+            <section class="sidebar-menu upper current">
+                <a class="sidebar-menu-li" href="./home.html">Dashboard</a>
+                <i class="icon fas fa-th-large active"></i>
+            </section>
+            <section class="sidebar-menu upper">
+                <a class="sidebar-menu-li" href="./transfer.html">Transfer</a>
+                <i class="icon fas fa-arrow-up"></i>
+            </section>
+            <section class="sidebar-menu upper">
+                <a class="sidebar-menu-li" href="#">Top Up</a>
+                <i class="icon fas fa-plus"></i>
+            </section>
+            <section class="sidebar-menu upper">
+                <a class="sidebar-menu-li" href="#">Profile</a>
+                <i class="icon far fa-user"></i>
+            </section>
+            <section class="sidebar-menu lower">
+                <a class="sidebar-menu-li" href="#">Log Out</a>
+                <i class="icon fas fa-sign-out-alt"></i>
+            </section>
+        </aside>
+        <main> <!-- Flex 4 with sidebar menu -->
+            <section class="upper-main-wrapper box">
+                    <section class="balance-content left">
+                        <h3 class="balance top-title">Balance</h3>
+                        <h2 class="balance amount-title">RP120.000</h2>
+                        <h2 class="balance phone-title">+62 813-9387-7946</h2>
+                    </section>
+                    <section class="balance-content right">
+                        <section class="balance transfer-button">
+                            <i class="balance-icon fas fa-arrow-up"></i>
                             <button class="btn btn-primary">Transfer</button>
-                        </div>
-                        <div class="balance right topup">
-                            <img src="./src/images/topup.svg" alt="" class="icon topup" width="40">
+                        </section>
+                        <section class="balance topup-button">
+                            <i class="balance-icon fas fa-plus"></i>
                             <button class="btn btn-primary">Top Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="transaction-content">
-                <div class="transaction-wrapper">
-                    <div class="box box-chart">
-                        <div class="box-chart top">
-                            <div class="top-left">
-                                <img src="./src/images/arrow-up.svg" alt="" class="arrow-up" width="28">
-                                <p class="chart-income-text">Income</p>
-                                <h3 class="chart-income-title">Rp2.120.000</h3>
-                            </div>
-                            <div class="top-right">
-                                <img src="./src/images/arrow-down.svg" alt="" class="arrow-down" width="28">
-                                <p class="chart-expense-text">Expense</p>
-                                <h3 class="chart-expense-title">Rp1.560.000</h3>
-                            </div>
-                        </div>
-                        <div class="box-chart bottom">
-                            <img src="./src/images/graphic.svg" alt="" class="transaction-chart" width="300">
-                        </div>
-                    </div>
-                </div>
-                <div class="transaction-wrapper">
-                    <div class="box box-history">
-                        <div class="box-history-top">
-                            <h3 class="trans-title">Transaction History</h3>
-                            <h3 class="trans-subtitle">See all</h3>
-                        </div>
-                        <div class="box-history-bottom">
-                            <div class="history-bottom-items">
-                                <img src="./src/images/tf-1.svg" alt="history-profile" class="history-profile" width="52" height="52">
-                                <div class="history-info">
-                                    <h2 class="transfer-user-name">Samuel Suhi</h2>
-                                    <span class="transfer-method">Transfer</span>
-                                </div>
-                                <h2 class="transfer-amount">+Rp50.000</h2>
-                            </div>
-                            <div class="history-bottom-items">
-                                <img src="./src/images/netf.svg" alt="history-profile" class="history-profile" width="52" height="52">
-                                <div class="history-info">
-                                    <h2 class="transfer-user-name">Netflix</h2>
-                                    <span class="transfer-method">Subscription</span>
-                                </div>
-                                <h2 class="transfer-amount red">-Rp149.000</h2>
-                            </div>
-                            <div class="history-bottom-items">
-                                <img src="./src/images/tf-0.svg" alt="history-profile" class="history-profile" width="52" height="52">
-                                <div class="history-info">
-                                    <h2 class="transfer-user-name">Christine Mar...</h2>
-                                    <span class="transfer-method">Transfer</span>
-                                </div>
-                                <h2 class="transfer-amount">+Rp150.000</h2>
-                            </div>
-                            <div class="history-bottom-items">
-                                <img src="./src/images/adobe.svg" alt="history-profile" class="history-profile" width="52" height="52">
-                                <div class="history-info">
-                                    <h2 class="transfer-user-name">Adobe Inc.</h2>
-                                    <span class="transfer-method">Subscription</span>
-                                </div>
-                                <h2 class="transfer-amount red">-Rp249.000</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        </section>
+                    </section>
+            </section>
+            <section class="lower-main-wrapper">
+                <section class="chart-wrapper box">
+                    <section class="chart-wrapper-top">
+                        <section class="chart-content">
+                            <i class="chart-icon up fas fa-arrow-up"></i>
+                            <p class="chart-income-text">Income</p>
+                            <h3 class="chart-income-title">Rp2.120.000</h3>
+                        </section>
+                        <section class="chart-content">
+                            <i class="chart-icon down fas fa-arrow-down"></i>
+                            <p class="chart-expense-text">Expense</p>
+                            <h3 class="chart-expense-title">Rp1.560.000</h3>
+                        </section>
+                    </section>
+                    <section class="chart-wrapper-bottom">
+                        <img src="./src/images/graphic.svg" alt="" class="transaction-chart" width="300">
+                    </section>
+                </section>
+                <section class="history-wrapper box">
+                    <section class="history-top">
+                        <h3 class="trans-title">Transaction History</h3>
+                        <a class="trans-subtitle" href="./transaction-history.html">See all</a>
+                    </section>
+                    <section class="history-bottom">
+                        <section class="history-bottom-items">
+                            <img src="./src/images/tf-1.svg" alt="history-profile" class="history-profile" width="52" height="52">
+                            <section class="history-info">
+                                <h2 class="transfer-user-name">Samuel Suhi</h2>
+                                <span class="transfer-method">Transfer</span>
+                            </section>
+                            <h2 class="transfer-amount">+Rp50.000</h2>
+                        </section>
+                        <section class="history-bottom-items">
+                            <img src="./src/images/netf.svg" alt="history-profile" class="history-profile" width="52" height="52">
+                            <section class="history-info">
+                                <h2 class="transfer-user-name">Netflix</h2>
+                                <span class="transfer-method">Subscription</span>
+                            </section>
+                            <h2 class="transfer-amount red">-Rp149.000</h2>
+                        </section>
+                        <section class="history-bottom-items">
+                            <img src="./src/images/tf-0.svg" alt="history-profile" class="history-profile" width="52" height="52">
+                            <section class="history-info">
+                                <h2 class="transfer-user-name">Christine Mar...</h2>
+                                <span class="transfer-method">Transfer</span>
+                            </section>
+                            <h2 class="transfer-amount">+Rp150.000</h2>
+                        </section>
+                        <section class="history-bottom-items">
+                            <img src="./src/images/adobe.svg" alt="history-profile" class="history-profile" width="52" height="52">
+                            <section class="history-info">
+                                <h2 class="transfer-user-name">Adobe Inc.</h2>
+                                <span class="transfer-method">Subscription</span>
+                            </section>
+                            <h2 class="transfer-amount red">-Rp249.000</h2>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </section>
     <footer>
-        <div class="footer left">
+        <section class="footer left">
             <h3 class="footer-title">2020 Zwallet. All right reserved.</h3>
-        </div>
-        <div class="footer right">
+        </section>
+        <section class="footer right">
             <h3 class="footer-title">+62 5637 8882 9901</h3>
             <h3 class="footer-title">contact@zwallet.com</h3>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
