@@ -84,6 +84,7 @@ nav {
     
         .far.fa-bell:hover {
             color: #6379F4;
+            cursor: pointer;
         }
 
 /* Main Container Area */
