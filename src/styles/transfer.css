@@ -356,11 +356,13 @@ footer {
 }
 
     .input-nominal {
-        width: 7rem;
+        width: 15rem;
         font-weight: bold;
         font-size: 42px;
         line-height: 56px;
         border: none;
+        padding-left: 10rem;
+        color: #4b5dc0;
     }
     .input-nominal::placeholder {
         color: #B5BDCC;
@@ -370,7 +372,12 @@ footer {
         outline: none;
     }
 
-    
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
 
     .input-amount-status {
         font-style: normal;
@@ -387,12 +394,7 @@ footer {
     justify-content: center;
 }
 
-    .note-icon {
-        position: absolute;
-        transform: translate(-200px, 5px);
-        font-size: 20px;
-    }
-
+    
     .input-form-note {
         width: 25rem;
         height: 2rem;
@@ -402,17 +404,28 @@ footer {
         font-weight: normal;
         font-size: 16px;
         line-height: 23px;
-        color: #000;
         padding-left: 3rem;
-    }
-
-    .input-form-note:focus {
-        /* border-color: #000; */
     }
 
     .input-form-note::placeholder {
         color: rgba(169, 169, 169, 0.8);
     }
+
+    .input-form-note:focus {
+        border-bottom: 2px solid #4b5dc0;
+    }
+
+    .input-form-note:focus + .note-icon {
+        color: #4b5dc0;
+    }
+
+    .note-icon {
+        position: absolute;
+        transform: translate(-200px, 5px);
+        font-size: 20px;
+        color: rgba(169, 169, 169, 0.8);
+    }
+
 
 .input-amount-lower {
     display: flex;
