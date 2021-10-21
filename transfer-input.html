@@ -9,95 +9,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d867f6532c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/mobile/transfer-media-styles.css">
     <title>Zwallet Transfer Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <section class="navbar-container">
-            <section class="navbar-column left">
-                <a class="navbar-brand-title" href="./home.html">Zwallet</a>
+    <nav>
+        <section class="navbar left">
+            <a class="navbar-brand-title" href="./home.html">Zwallet</a>
+        </section>
+        <section class="navbar right">
+            <img src="./src/images/pic1.svg" class="user-image" alt="user-profile" width="52" height="52">
+            <section class="user-info">
+                <h2 class="user-name">Robert Chandler</h2>
+                <span class="user-phone">+62 8139 3877 7946</span>
             </section>
-            <section class="navbar-column right">
-                <img src="./src/images/pic1.svg" alt="user-profile" class="user-pict" width="52" height="52">
-                <section class="user-info">
-                    <h2 class="user-name">Robert Chandler</h2>
-                    <span class="user-phone">+62 8139 3877 7946</span>
-                </section>
-                <i class="far fa-bell"></i>
+            <section class="user-info-mobile">
+                <span class="user-greet">Hello,</span>
+                <h2 class="user-name">Robert Chandler</h2>
             </section>
+            <i class="far fa-bell"></i>
         </section>
     </nav>
     <main class="main-container">
-        <aside class="sidebar-menu box"> <!-- Flex 1 with transaction wrapper -->
-            <section class="sidebar-menu upper">
-                <a class="sidebar-menu-li" href="./home.html">Dashboard</a>
-                <i class="icon fas fa-th-large"></i>
-            </section>
-            <section class="sidebar-menu upper current">
-                <a class="sidebar-menu-li" href="./transfer.html">Transfer</a>
-                <i class="icon fas fa-arrow-up active"></i>
-            </section>
-            <section class="sidebar-menu upper">
-                <a class="sidebar-menu-li" href="#">Top Up</a>
-                <i class="icon fas fa-plus"></i>
-            </section>
-            <section class="sidebar-menu upper">
-                <a class="sidebar-menu-li" href="#">Profile</a>
-                <i class="icon far fa-user"></i>
-            </section>
-            <section class="sidebar-menu lower">
-                <a class="sidebar-menu-li" href="./landing.html">Log Out</a>
-                <i class="icon fas fa-sign-out-alt"></i>
-            </section>
-        </aside>
-        <section class="box transaction-wrapper"> <!-- Flex 3 with sidebar menu -->
-            <section class="transaction-top">
-                <h2 class="transaction-title">Transfer Money</h2>
-                <section class="box input item-wrapper">
-                    <section class="item user-picture">
-                        <img src="./src/images/tf-1.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
+        <div class="inner-container">
+            <aside class="sidebar-menu box"> <!-- Flex 1 with transaction wrapper -->
+                <section class="sidebar-menu upper">
+                    <a class="sidebar-menu-li" href="./home.html">Dashboard</a>
+                    <i class="icon fas fa-th-large"></i>
+                </section>
+                <section class="sidebar-menu upper current">
+                    <a class="sidebar-menu-li" href="./transfer.html">Transfer</a>
+                    <i class="icon fas fa-arrow-up active"></i>
+                </section>
+                <section class="sidebar-menu upper">
+                    <a class="sidebar-menu-li" href="#">Top Up</a>
+                    <i class="icon fas fa-plus"></i>
+                </section>
+                <section class="sidebar-menu upper">
+                    <a class="sidebar-menu-li" href="#">Profile</a>
+                    <i class="icon far fa-user"></i>
+                </section>
+                <section class="sidebar-menu lower">
+                    <a class="sidebar-menu-li" href="./landing.html">Log Out</a>
+                    <i class="icon fas fa-sign-out-alt"></i>
+                </section>
+            </aside>
+            <section class="box transaction-wrapper"> <!-- Flex 3 with sidebar menu -->
+                <section class="transaction-top">
+                    <h2 class="transaction-title">Transfer Money</h2>
+                    <section class="box input item-wrapper">
+                        <section class="item user-picture">
+                            <img src="./src/images/tf-1.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
+                        </section>
+                        <section class="item history-info">
+                            <h2 class="transfer-user-name">Samuel Suhi</h2>
+                            <span class="transfer-method">+62 813-8492-9994</span>
+                        </section>
                     </section>
-                    <section class="item history-info">
-                        <h2 class="transfer-user-name">Samuel Suhi</h2>
-                        <span class="transfer-method">+62 813-8492-9994</span>
+                </section>
+                <section class="transaction-bottom">
+                    <section class="input-amount-upper">
+                        <p class="transfer-parag blank">
+                            Type the amount you want to transfer and then
+                            press continue to the next steps.
+                        </p>
+                    </section>
+                    <section class="input-amount-center">
+                        
+                        <input type="number" class="input-nominal" placeholder="0.00" step="0.01" min="0.00">
+                        <h2 class="input-amount-status">
+                            Rp120.000 Available
+                        </h2>
+                    </section>
+                    <section class="input-form blank">
+                        
+                        <input type="text" class="input-form-note" placeholder="Add some notes">
+                        <i class="note-icon fas fa-pen"></i>
+                    </section>
+                    <section class="input-amount-lower">
+                        <a href="./status-success.html"><button class="form-button">Continue</button></a>
                     </section>
                 </section>
             </section>
-            <section class="transaction-bottom">
-                <section class="input-amount-upper">
-                    <p class="transfer-parag blank">
-                        Type the amount you want to transfer and then
-                        press continue to the next steps.
-                    </p>
-                </section>
-                <section class="input-amount-center">
-                    
-                    <input type="number" class="input-nominal" placeholder="0.00" step="0.01" min="0.00">
-                    <h2 class="input-amount-status">
-                        Rp120.000 Available
-                    </h2>
-                </section>
-                <section class="input-form blank">
-                    
-                    <input type="text" class="input-form-note" placeholder="Add some notes">
-                    <i class="note-icon fas fa-pen"></i>
-                </section>
-                <section class="input-amount-lower">
-                    <a href="./status-success.html"><button class="form-button">Continue</button></a>
-                </section>
-            </section>
-                
-                
-        </section>
+        </div>
     </main>
     <footer>
-        <section class="footer left">
-            <h3 class="footer-title">2020 Zwallet. All right reserved.</h3>
-        </section>
-        <section class="footer right">
-            <h3 class="footer-title">+62 5637 8882 9901</h3>
-            <h3 class="footer-title">contact@zwallet.com</h3>
-        </section>
+        <div class="inner-footer">
+            <section class="footer left">
+                <h3 class="footer-title">2020 Zwallet. All right reserved.</h3>
+            </section>
+            <section class="footer right">
+                <div class="footer-left">
+                    <h3 class="footer-title">+62 5637 8882 9901</h3>
+                </div>
+                <div class="footer-right">
+                    <h3 class="footer-title right">contact@zwallet.com</h3>
+                </div>
+            </section>
+        </div>
+        
     </footer>
 </body>
 
