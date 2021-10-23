@@ -8,7 +8,7 @@
         padding-left: 3rem;
     }
 
-    .transaction-middle, .search-input-area {
+    .transaction-middle, .search-input-area, .input-amount-lower-mobile {
         display: none;
     }
 }
@@ -21,7 +21,7 @@
 
     
 
-    .user-info-mobile, .transaction-middle, .search-input-area  {
+    .user-info-mobile, .transaction-middle, .search-input-area, .input-amount-lower-mobile  {
         display: none;
     }
 
@@ -34,7 +34,7 @@
 
 
 @media screen and (min-width: 1440px) {
-    .user-info-mobile, .transaction-middle, .search-input-area  {
+    .user-info-mobile, .transaction-middle, .search-input-area, .input-amount-lower-mobile  {
         display: none;
     }
 
@@ -149,6 +149,65 @@
     .form-search {
         width: 18rem;
     }
+
+
+    /* Transfer Input amount */
+
+    .input-amount-upper, .input-amount-lower {
+        display: none;
+    }
+
+    .input-amount-center {
+        flex: 1;
+        padding-bottom: 2rem;
+    }
+
+    .input-form.blank {
+        display: flex;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .input-form-note {
+        width: 70%;
+    }
+
+    .input-nominal {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .note-icon {
+        transform: translate(-8rem, 5px);
+    }
+
+    .input-amount-lower-mobile {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .level {
+        display: flex;
+        flex: 1;
+    }
+
+    .number {
+        display: flex;
+        flex: 1;
+        font-weight: 400;
+        line-height: 50px;
+        font-size: 25px;
+        justify-content: center;
+        color: #383838;
+    }
+
+    .backspace-icon {
+        font-size: 20px;
+    }
+
+
 
 
 }
