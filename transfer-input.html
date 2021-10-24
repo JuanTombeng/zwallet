@@ -57,6 +57,10 @@
             <section class="box transaction-wrapper"> <!-- Flex 3 with sidebar menu -->
                 <section class="transaction-top">
                     <h2 class="transaction-title">Transfer Money</h2>
+                    <section class="transaction-input-upper-area">
+                        <a class="back-to-home" href="./transfer.html"><i class="back-icon fas fa-arrow-left"></i></a>
+                        <h2 class="transfer-title">Transfer</h2>
+                    </section>
                     <section class="box input item-wrapper">
                         <section class="item user-picture">
                             <img src="./src/images/tf-1.svg" alt="history-profile" class="transaction-user-picture" width="70" height="70">
@@ -75,11 +79,19 @@
                         </p>
                     </section>
                     <section class="input-amount-center">
+                        <div class="input-amount-content-main">
+                            <input type="number" class="input-nominal" placeholder="0.00" step="0.01" min="0.00">
+                            <h2 class="input-amount-status">
+                                Rp120.000 Available
+                            </h2>
+                        </div>
+                        <div class="input-amount-content-mobile">
+                            <h2 class="input-amount-status">
+                                Rp120.000 Available
+                            </h2>
+                            <input type="number" class="input-nominal" placeholder="0.00" step="0.01" min="0.00">
+                        </div>
                         
-                        <input type="number" class="input-nominal" placeholder="0.00" step="0.01" min="0.00">
-                        <h2 class="input-amount-status">
-                            Rp120.000 Available
-                        </h2>
                     </section>
                     <section class="input-form blank">
                         
@@ -88,76 +100,6 @@
                     </section>
                     <section class="input-amount-lower">
                         <a href="./status-success.html"><button class="form-button">Continue</button></a>
-                    </section>
-                    <section class="input-amount-lower-mobile">
-                        <div class="level one">
-                            <div class="number one-left">
-                                <h2 class="number-fill">
-                                    1
-                                </h2>
-                            </div>
-                            <div class="number one-center">
-                                <h2 class="number-fill">
-                                    2
-                                </h2>
-                            </div>
-                            <div class="number one-right">
-                                <h2 class="number-fill">
-                                    3
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="level two">
-                            <div class="number two-left">
-                                <h2 class="number-fill">
-                                    4
-                                </h2>
-                            </div>
-                            <div class="number two-center">
-                                <h2 class="number-fill">
-                                    5
-                                </h2>
-                            </div>
-                            <div class="number two-right">
-                                <h2 class="number-fill">
-                                    6
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="level three">
-                            <div class="number three-left">
-                                <h2 class="number-fill">
-                                    7
-                                </h2>
-                            </div>
-                            <div class="number three-center">
-                                <h2 class="number-fill">
-                                    8
-                                </h2>
-                            </div>
-                            <div class="number three-right">
-                                <h2 class="number-fill">
-                                    9
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="level four">
-                            <div class="number four-left">
-                                <h2 class="number-fill">
-                                    .
-                                </h2>
-                            </div>
-                            <div class="number four-center">
-                                <h2 class="number-fill">
-                                    0
-                                </h2>
-                            </div>
-                            <div class="number four-right">
-                                <h2 class="number-fill">
-                                    <i class="backspace-icon fas fa-backspace"></i>
-                                </h2>
-                            </div>
-                        </div>
                     </section>
                 </section>
             </section>
