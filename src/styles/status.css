@@ -15,81 +15,6 @@ body {
     box-sizing: border-box;
 }
 
-/* .navbar-container {
-    background-color: #fff;
-    display: flex;
-    padding: 0 10rem;
-    height: 10vh;
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.navbar-column.left {
-    display: flex;
-    flex: 5;
-    align-items: center;
-}
-
-.navbar-column.right {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.user-info {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-    line-height: 31px;
-}
-
-.user-info:hover {
-    background-color: rgb(240, 238, 238);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-    .user-name {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 31px;
-        text-align: center;
-        color: #3A3D42;
-    }
-
-    .user-phone {
-        font-weight: normal;
-        font-size: 13px;
-        line-height: 24px;
-        color: rgba(58, 61, 66, 0.9);
-    }
-
-    .far.fa-bell {
-        font-size: 25px;
-    }
-
-    .far.fa-bell:hover {
-        color: #6379F4;
-        cursor: pointer;
-    }
-
-.navbar-brand-title {
-    display: flex;
-    color: #6379F4;
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 40px;
-    font-style: none;
-    text-decoration: none;
-}
-
-.user-name {
-    margin: 0;
-} */
 
 nav {
     background-color: #fff;
@@ -179,19 +104,12 @@ nav {
 
 /* Main Container Area */
 
-/* .main-container {
-    display: flex;
-    height: 83vh;
-    padding: 2rem 9rem;
-    box-sizing: border-box;
-} */
 
 .main-container {
     display: flex;
     height: 79vh;
     box-sizing: border-box;
     width: 100%;
-    background-color: bisque;
 }
 
 .inner-container {
@@ -252,20 +170,6 @@ nav {
                 color: #3A3D42;
             }
 
-        /* .icon {
-            position: absolute;
-            padding-left: 3rem;
-            font-size: 25px;
-            color: #6A6A6A;
-            ;
-        }
-
-        .icon.active {
-            position: absolute;
-            padding-left: 3rem;
-            font-size: 25px;
-            color: #6379F4;
-        } */
        
         .icon {
             position: absolute;
@@ -321,10 +225,21 @@ nav {
         margin: 10px;
     }
 
+.transaction-status-title {
+    padding: 0 1rem;
+}
+
+    .detail-title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;color: #514F5B;
+    }
+
 .status-middle {
     display: flex;
     flex: 3;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -455,32 +370,6 @@ nav {
 
 
 /* Footer Area */
-
-/* footer {
-    display: flex;
-    justify-content: space-between;
-    height: 7vh;
-    background-color: #6379F4;
-    padding: 0 10rem;
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFF;
-}
-
-.footer.left {
-    font-weight: 400;
-}
-
-.footer.right {
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-title {
-    display: flex;
-    padding: 0 2rem;
-} */
 
 
 footer {
