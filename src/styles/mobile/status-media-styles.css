@@ -1,0 +1,119 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sidebar-menu-li {
+        padding-left: 3rem;
+    } */
+
+    /* .transaction-status-title {
+        display: none;
+    } */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    
+
+    /* .inner-container {
+        padding: 1rem 2rem;
+    } */
+
+    
+
+    .user-info-mobile, .transaction-status-title {
+        display: none;
+    }
+
+    /* .icon {
+        padding-left: 1rem;
+    } */
+
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .user-info-mobile, .transaction-status-title {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+
+    nav, .sidebar-menu, .form-button.share, .form-button.download, footer {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .inner-container {
+        padding: 0;
+        width: 100%;
+        background-color: #FAFCFF;
+    }
+
+    .status-wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #FAFCFF;  
+        border-radius: 0;
+    }
+
+    .status-top {
+        margin-top: 3rem;
+    }
+
+    .item.middle.wrapper {
+        margin: 1rem;
+    }
+
+    .item-status-desc {
+        margin-bottom: 0;
+    }
+
+    .item.bottom.wrapper.buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .status-subtitle {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        color: #7A7886;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .form-button {
+        width: 18rem;
+    }
+
+    .status-subtitle {
+        width: 18rem;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .form-button {
+        width: 22rem;
+    }
+
+    .status-subtitle {
+        width: 21rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .form-button {
+        width: 24rem;
+    }
+
+    .status-subtitle {
+        width: 21rem;
+    }
+}
