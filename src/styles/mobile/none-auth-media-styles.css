@@ -31,6 +31,47 @@
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .main-content {
+        padding: 0;
+    }
+
+    .left-content {
+        padding-left: 5rem;
+    }
+
+    .far.fa-eye-slash {
+        transform: translate(17rem, -30px);
+    }
+
+    .top-right-title {
+        padding-top: 0;
+        width: 17rem;
+    }
+
+    .top-right-parag {
+        width: 100%;
+    }
+
+    .auth-form {
+        margin-top: 3rem;
+    }
+
+    .auth-form-bottom {
+        padding-top: 4rem;
+    }
+
+    .forget-password-link {
+        transform: translate(1rem, 1rem);
+    }
+
+    .form-button {
+        width: 18rem;
+    }
+}
+
+
 
 @media screen and (min-width: 320px) and (max-width: 425px){
 
@@ -96,13 +137,7 @@
         width: 86%;
     }
 
-    .icon {
-        transform: translate(-19rem, 0);
-    }
-
-    .far.fa-eye-slash {
-        transform: translate(-2rem, 6px);
-    }
+    
 
     .auth-form-bottom {
         padding-top: 3rem;
@@ -119,9 +154,35 @@
     }
 }
 
+
 @media screen and (min-width: 425px) and (max-width: 768px){
     .icon {
         transform: translate(-21.5rem, 0);
     }
-
 }
+
+@media screen and (max-width: 375px){
+    .icon {
+        transform: translate(-19rem, 0);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .icon {
+        transform: translate(0.5rem, -35px);
+    }
+
+    .far.fa-eye-slash {
+        transform: translate(15rem, -30px);
+    }
+
+    .auth-form-label {
+        width: 17rem;
+    }
+    
+    .form-button {
+        width: 18rem;
+    }
+}
+
+
