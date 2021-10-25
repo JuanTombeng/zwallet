@@ -236,18 +236,34 @@ nav {
     }
 
 .status-middle {
-    display: flex;
-    flex: 3;
+    /* display: flex;
+    flex: 3; */
     flex-direction: column;
     width: 100%;
+    border: 1px solid #edeef0;
+    border-radius: 1rem;
 }
+
+    .middle-section-scroll{
+        height: 20rem;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .middle-section-scroll-failed{
+        height: 10rem;
+        overflow: hidden;
+        overflow-y: scroll;
+        box-sizing: border-box;
+        padding: 1rem 0;
+    }
 
 
     .item.middle.wrapper {
         align-items: center;
         display: flex;
         padding: 0.5rem 1rem;
-        margin: 1px 0;
+        margin: 1rem;
     }
 
 
