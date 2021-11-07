@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d867f6532c.js" crossorigin="anonymous"></script>
+    <title>Transaction Detail Page Zwallet</title>
+</head>
+<body>
+    <div class="wrapper-home d-flex flex-column">
+        <header class="header d-none d-md-block d-flex flex-row p-md-5 py-5 px-2 align-items-center">
+            <div class="row g-0 d-flex">
+                <div class="col d-flex">
+                    <div class="title-menu d-flex align-items-center">
+                        <h1 class="main-title primary">Zwallet</h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="user-menu d-flex justify-content-md-end justify-content-center align-items-center">
+                        <img class="user-picture" src="./src/img/pic1.svg" alt="">
+                        <div class="d-flex flex-column justify-content-center px-2">
+                            <h2 class="user-name m-0 d-flex justify-content-center">
+                                Robert Chandler
+                            </h2>
+                            <p class="user-phone m-0 d-flex justify-content-center">
+                                +62 8139 3877 7946
+                            </p>
+                        </div>
+                        <i class="icon-notif far fa-bell d-flex align-items-center"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content flex-fill">
+            <div class="container-md-fluid container-lg m-md-0 m-lg-auto g-0 h-100 d-flex p-0 p-md-2 w-100">
+                <aside class="sidebar box d-none d-md-flex flex-column justify-content-between py-3 me-2 my-2 g-0">
+                    <div class="menu">
+                        <a href="./home.html">    
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3 primary active">
+                            <i class="icon fas fa-th-large"></i>
+                            <li class="menu-list d-none d-lg-block px-3">Dashboard</li>
+                        </div>
+                        </a>
+                        <a href="./transfer.html">  
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3">
+                            <i class="icon fas fa-arrow-up"></i>
+                            <li class="menu-list d-none d-lg-block px-3">Transfer</li>
+                        </div>
+                        </a>
+                        <a href="./home.html">  
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3">
+                            <i class="icon fas fa-plus"></i>
+                            <li class="menu-list d-none d-lg-block px-3">Top Up</li>
+                        </div>
+                        </a>
+                        <a href="./home.html">  
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3">
+                            <i class="icon far fa-user"></i>
+                            <li class="menu-list d-none d-lg-block px-3">Profile</li>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="logout">
+                        <a href="./login.html">  
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3">
+                            <i class="icon fas fa-sign-out-alt"></i>
+                            <li class="menu-list d-none d-lg-block d-flex px-3">Log Out</li>
+                        </div>
+                        </a>
+                    </div>
+                </aside>
+                <div class="main-content box flex-fill m-1 ms-md-2 my-md-2 p-3 d-flex flex-column">
+                    <div class="row px-md-3 py-3">
+                        <div class="col d-md-none">
+                            <div class="row d-flex">
+                                <div class="col col-2 d-flex align-items-center">
+                                    <a href="./home.html"><i class="icon fas fa-arrow-left"></i></a>
+                                </div>
+                                <div class="col p-0">
+                                    <h2 class="font-18 m-0 d-flex">
+                                        Transaction
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="balance-wrapper box row g-0 p-3 my-3 d-md-none">
+                        <div class="row g-0">
+                            <div class="col col-lg-8">
+                                <i class="icon green up fas fa-arrow-down"></i>
+                                <p class="font-14 white">Income</p>
+                                <h3 class="font-18 white">Rp2.120.000</h3>
+                            </div>
+                            <div class="col col-lg-4">
+                                <i class="icon red up fas fa-arrow-up"></i>
+                                <p class="font-14 white">Income</p>
+                                <h3 class="font-18 white">Rp2.120.000</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-2 d-md-none d-block">
+                        <div class="row d-flex flex-column">
+                            <div class="col">
+                                <h2 class="user-name m-0 d-flex">
+                                    In This Week
+                                </h2>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <img class="balance-grah" src="./src/img/graphic.svg" alt="" width="300" height="300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transaction-wrapper flex-fill row g-0 mt-2">
+                        <div class="chart box d-none d-md-block col p-3 me-2">
+                            <div class="row g-0">
+                                <div class="col col-lg-8">
+                                    <i class="icon green up fas fa-arrow-down"></i>
+                                    <p class="chart-income-text font-14">Income</p>
+                                    <h3 class="chart-income-title font-18">Rp2.120.000</h3>
+                                </div>
+                                <div class="col col-lg-4">
+                                    <i class="icon red up fas fa-arrow-up"></i>
+                                    <p class="chart-income-text font-14">Income</p>
+                                    <h3 class="chart-income-title font-18">Rp2.120.000</h3>
+                                </div>
+                            </div>
+                            <div class="row g-0 d-flex">
+                                <img class="balance-grah d-flex" src="./src/img/graphic.svg" alt="" width="300" height="300">
+                            </div>
+                        </div>
+                        <div class="history box col ms-md-2 d-flex flex-column">
+                            <div class="row g-0">
+                                <div class="col">
+                                    <p class="chart-income-title font-18">Transaction History</p>
+                                </div>
+                                <div class="col">
+                                    <p class="chart-income-title d-flex justify-content-end font-14">See all</p>
+                                </div>
+                            </div>
+                            <div class="row box p-3 py-md-3 px-md-0 m-md-2 p-md-3 d-flex align-items-center">
+                                <div class="col col-3 col-md-4 col-lg-3 col-xl-2 g-0 d-flex justify-content-center">
+                                    <img class="user-picture" src="./src/img/tf-1.svg" alt="">
+                                </div>
+                                <div class="col col-3 col-md-4 col-lg-4 col-xl-4 g-0 d-flex flex-column px-2">
+                                    <h2 class="font-18 m-0 d-flex">
+                                        Samuel Suhi
+                                    </h2>
+                                    <p class="font-14 m-0 d-flex">
+                                        Transfer
+                                    </p>
+                                </div>
+                                <div class="col col-6 col-md-4 col-lg-5 col-xl-6 flex-grow-0 g-0 d-flex justify-content-end">
+                                    <h2 class="font-18 m-0 d-flex green">
+                                        +Rp50.000
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row box p-3 py-md-3 px-md-0 m-md-2 p-md-3 d-flex align-items-center">
+                                <div class="col col-3 col-md-4 col-lg-3 col-xl-2 g-0 d-flex justify-content-center">
+                                    <img class="user-picture" src="./src/img/netf.svg" alt="">
+                                </div>
+                                <div class="col col-3 col-md-4 col-lg-4 col-xl-4 g-0 d-flex flex-column px-2">
+                                    <h2 class="font-18 m-0 d-flex">
+                                        Netflix
+                                    </h2>
+                                    <p class="font-14 m-0 d-flex">
+                                        Subscription
+                                    </p>
+                                </div>
+                                <div class="col col-6 col-md-4 col-lg-5 col-xl-6 flex-grow-0 g-0 d-flex justify-content-end">
+                                    <h2 class="font-18 m-0 d-flex pe-2 red">
+                                        -Rp149.000
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row box p-3 py-md-3 px-md-0 m-md-2 p-md-3 d-flex align-items-center">
+                                <div class="col col-3 col-md-4 col-lg-3 col-xl-2 g-0 d-flex justify-content-center">
+                                    <img class="user-picture" src="./src/img/tf-0.svg" alt="">
+                                </div>
+                                <div class="col col-3 col-md-4 col-lg-4 col-xl-4 g-0 d-flex flex-column px-2">
+                                    <h2 class="font-18 m-0 d-flex">
+                                        Christine Mar...
+                                    </h2>
+                                    <p class="font-14 m-0 d-flex">
+                                        Transfer
+                                    </p>
+                                </div>
+                                <div class="col col-6 col-md-4 col-lg-5 col-xl-6 flex-grow-0 g-0 d-flex justify-content-end">
+                                    <h2 class="font-18 m-0 d-flex pe-2 green">
+                                        +Rp150.000
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row box p-3 py-md-3 px-md-0 m-md-2 p-md-3 d-flex align-items-center">
+                                <div class="col col-3 col-md-4 col-lg-3 col-xl-2 g-0 d-flex justify-content-center">
+                                    <img class="user-picture" src="./src/img/adobe.svg" alt="">
+                                </div>
+                                <div class="col col-3 col-md-4 col-lg-4 col-xl-4 g-0 d-flex flex-column px-2">
+                                    <h2 class="font-18 m-0 d-flex">
+                                        Adobe Inc.
+                                    </h2>
+                                    <p class="font-14 m-0 d-flex">
+                                        Subscription
+                                    </p>
+                                </div>
+                                <div class="col col-6 col-md-4 col-lg-5 col-xl-6 flex-grow-0 g-0 d-flex justify-content-end">
+                                    <h2 class="font-18 m-0 d-flex pe-2 red">
+                                        -Rp249.000
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row box d-md-none p-3 py-md-3 px-md-0 m-md-2 p-md-3 d-flex align-items-center">
+                                <div class="col col-3 col-md-4 col-lg-3 col-xl-2 g-0 d-flex justify-content-center">
+                                    <img class="user-picture" src="./src/img/tf-2.svg" alt="">
+                                </div>
+                                <div class="col col-3 col-md-4 col-lg-4 col-xl-4 g-0 d-flex flex-column px-2">
+                                    <h2 class="font-18 m-0 d-flex">
+                                        Momo Taro
+                                    </h2>
+                                    <p class="font-14 m-0 d-flex">
+                                        Transfer
+                                    </p>
+                                </div>
+                                <div class="col col-6 col-md-4 col-lg-5 col-xl-6 flex-grow-0 g-0 d-flex justify-content-end">
+                                    <h2 class="font-18 m-0 d-flex pe-2 red">
+                                        -Rp200.000
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer d-flex d-none d-lg-block w-100">
+            <div class="container py-3">
+             <div class="row d-flex justify-content-center">
+                 <div class="col col-xl-8 col-lg-4 d-flex align-items-lg-center">
+                     <p class="font-16 my-0">2020 Zwallet. All right reserved.</p>
+                 </div>
+                 <div class="col col-xl-2 col-lg-4 d-flex align-items-center justify-content-lg-end">
+                     <p class="font-16 m-0">+62 5637 8882 9901</p>
+                 </div>
+                 <div class="col col-xl-2 col-lg-4 d-flex align-items-center">
+                     <p class="font-16 m-0">contact@zwallet.com</p>
+                 </div>
+             </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+                                            

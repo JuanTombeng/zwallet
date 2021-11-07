@@ -12,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d867f6532c.js" crossorigin="anonymous"></script>
-    <title>Transaction History Page Zwallet</title>
+    <title>Transfer Confirmation Page Zwallet</title>
 </head>
+<style>
+</style>
+
 <body>
     <div class="wrapper-home d-flex flex-column">
         <header class="header d-none d-md-block d-flex flex-row p-md-5 py-5 px-2 align-items-center">
@@ -44,13 +47,13 @@
                 <aside class="sidebar box d-none d-md-flex flex-column justify-content-between py-3 me-2 my-2 g-0">
                     <div class="menu">
                         <a href="./home.html">
-                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3  primary active">
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3">
                             <i class="icon fas fa-th-large"></i>
                             <li class="menu-list d-none d-lg-block px-3">Dashboard</li>
                         </div>
                         </a>
                         <a href="./transfer.html">
-                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3">
+                        <div class="d-flex justify-content-center justify-content-lg-start py-2 my-4 px-3 primary active">
                             <i class="icon fas fa-arrow-up"></i>
                             <li class="menu-list d-none d-lg-block px-3">Transfer</li>
                         </div>
@@ -80,140 +83,96 @@
                 <div class="main-content box flex-fill m-1 ms-md-2 my-md-2 p-3 d-flex flex-column">
                     <div class="row px-md-3">
                         <div class="col d-none d-md-block">
-                            <h2 class="user-name m-0 d-flex">
-                                Transaction History
+                            <h2 class="font-18 m-0 d-flex">
+                                Transfer To
                             </h2>
                         </div>
-                        <div class="col d-md-none">
+                        <div class="col d-md-none py-3">
                             <div class="row d-flex">
                                 <div class="col col-2 d-flex align-items-center">
-                                    <a href="./home.html"><i class="icon fas fa-arrow-left"></i></a>
+                                    <a href="./transfer-input.html"><i class="icon fas fa-arrow-left"></i></a>
                                 </div>
                                 <div class="col p-0">
                                     <h2 class="font-18 m-0 d-flex">
-                                        History
+                                        Confirmation
                                     </h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <p class="user-phone m-0 d-flex">
-                                This Week
-                            </p>
+                    <div class="row py-2">
+                        <div class="col d-md-none">
+                            <h2 class="font-18 m-0 d-flex">
+                                Transfer To
+                            </h2>
                         </div>
                     </div>
-                    <div class="row box p-3 m-md-2 p-md-3 d-flex align-items-center">
-                        <div class="col col-3 col-md-2 col-lg-1 g-0 d-flex justify-content-center">
+                    <div class="row box p-md-3 py-3 m-2 d-flex align-items-center">
+                        <div class="col col-md-2 col-lg-2 col-xl-1 col-3 g-0 d-flex justify-content-center">
                             <img class="user-picture" src="./src/img/tf-1.svg" alt="">
                         </div>
-                        <div class="col col-3 col-md-4 col-lg-5 g-0 d-flex flex-column px-2">
+                        <div class="col g-0 d-flex flex-column">
                             <h2 class="font-18 m-0 d-flex">
                                 Samuel Suhi
                             </h2>
                             <p class="font-14 m-0 d-flex">
-                                Transfer
+                                +62 813-8492-9994
                             </p>
                         </div>
-                        <div class="col col-6 col-md-6 flex-grow-0 g-0 d-flex justify-content-end">
-                            <h2 class="font-18 m-0 d-flex green">
-                                +Rp50.000
-                            </h2>
-                        </div>
                     </div>
-                    <div class="row box p-3 m-md-2 p-md-3 d-flex align-items-center">
-                        <div class="col col-3 col-md-2 col-lg-1 g-0 d-flex justify-content-center">
-                            <img class="user-picture" src="./src/img/netf.svg" alt="">
-                        </div>
-                        <div class="col col-3 col-md-4 col-lg-5 g-0 d-flex flex-column px-2">
-                            <h2 class="font-18 m-0 d-flex">
-                                Netflix
-                            </h2>
-                            <p class="font-14 m-0 d-flex">
-                                Subscription
-                            </p>
-                        </div>
-                        <div class="col col-6 col-md-6 flex-grow-0 g-0 d-flex justify-content-end">
-                            <h2 class="font-18 m-0 d-flex pe-2 red">
-                                -Rp149.000
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row p-3">
+
+                    <div class="row px-md-3">
                         <div class="col">
-                            <p class="user-phone m-0 d-flex">
-                                This Month
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row box p-3 m-md-2 p-md-3 d-flex align-items-center">
-                        <div class="col col-3 col-md-2 col-lg-1 g-0 d-flex justify-content-center">
-                            <img class="user-picture" src="./src/img/tf-0.svg" alt="">
-                        </div>
-                        <div class="col col-3 col-md-4 col-lg-5 g-0 d-flex flex-column px-2">
                             <h2 class="font-18 m-0 d-flex">
-                                Christine Mar...
-                            </h2>
-                            <p class="font-14 m-0 d-flex">
-                                Transfer
-                            </p>
-                        </div>
-                        <div class="col col-6 col-md-6 flex-grow-0 g-0 d-flex justify-content-end">
-                            <h2 class="font-18 m-0 d-flex pe-2 green">
-                                +Rp150.000
+                                Details
                             </h2>
                         </div>
                     </div>
-                    <div class="row box p-3 m-md-2 p-md-3 d-flex align-items-center">
-                        <div class="col col-3 col-md-2 col-lg-1 g-0 d-flex justify-content-center">
-                            <img class="user-picture" src="./src/img/adobe.svg" alt="">
-                        </div>
-                        <div class="col col-3 col-md-4 col-lg-5 g-0 d-flex flex-column px-2">
+
+                    <div class="row box m-2 py-3 px-2">
+                        <div class="col g-0 d-flex flex-column">
+                            <p class="font-14 m-0 mb-2 d-flex">
+                                Amount
+                            </p>
                             <h2 class="font-18 m-0 d-flex">
-                                Adobe Inc.
-                            </h2>
-                            <p class="font-14 m-0 d-flex">
-                                Subscription
-                            </p>
-                        </div>
-                        <div class="col col-6 col-md-6 flex-grow-0 g-0 d-flex justify-content-end">
-                            <h2 class="font-18 m-0 d-flex pe-2 red">
-                                -Rp249.000
+                                Rp100.000
                             </h2>
                         </div>
                     </div>
-                    <div class="row box d-md-none p-3 m-md-2 p-md-3 d-flex align-items-center">
-                        <div class="col col-3 col-md-2 col-lg-1 g-0 d-flex justify-content-center">
-                            <img class="user-picture" src="./src/img/tf-2.svg" alt="">
-                        </div>
-                        <div class="col col-3 col-md-4 col-lg-5 g-0 d-flex flex-column px-2">
+                    <div class="row box m-2 py-3 px-2">
+                        <div class="col g-0 d-flex flex-column">
+                            <p class="font-14 m-0 mb-2 d-flex">
+                                Balance Left
+                            </p>
                             <h2 class="font-18 m-0 d-flex">
-                                Momo Taro
-                            </h2>
-                            <p class="font-14 m-0 d-flex">
-                                Transfer
-                            </p>
-                        </div>
-                        <div class="col col-6 col-md-6 flex-grow-0 g-0 d-flex justify-content-end">
-                            <h2 class="font-18 m-0 d-flex pe-2 red">
-                                -Rp200.000
+                                Rp20.000
                             </h2>
                         </div>
                     </div>
-                    <div class="row d-flex d-md-none p-3">
-                        <div class="col px-2 col-3 d-flex justify-content-center">
-                            <button type="button" class="filter-arrow btn btn-primary red">
-                                <i class="fas fa-arrow-up"></i>
-                            </button>
+                    <div class="row box m-2 py-3 px-2">
+                        <div class="col g-0 d-flex flex-column">
+                            <p class="font-14 m-0 mb-2 d-flex">
+                                Date & Time
+                            </p>
+                            <h2 class="font-18 m-0 d-flex">
+                                May 11, 2020 - 12.20
+                            </h2>
                         </div>
-                        <div class="col px-2 col-3 d-flex justify-content-center">
-                            <button type="button" class="filter-arrow btn btn-primary green">
-                                <i class="fas fa-arrow-down"></i>
-                            </button>
+                    </div>
+                    <div class="row box m-2 py-3 px-2">
+                        <div class="col g-0 d-flex flex-column">
+                            <p class="font-14 m-0 mb-2 d-flex">
+                                Notes
+                            </p>
+                            <h2 class="font-18 m-0 d-flex">
+                                For buying some socks
+                            </h2>
                         </div>
-                        <div class="col px-2 col-6 d-flex justify-content-center">
-                            <button type="button" class="filter btn btn-primary primary">Filter by Date</button>
+                    </div>
+
+                    <div class="row m-2 py-3 px-2 d-flex justify-content-end">
+                        <div class="col col-md-4 col-xl-3 d-flex">
+                            <a class="form-button white d-flex align-items-center justify-content-center" href="./transfer-success.html" role="button">Continue</a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +192,7 @@
                  </div>
              </div>
             </div>
-         </footer>
+        </footer>
     </div>
 </body>
 </html>
