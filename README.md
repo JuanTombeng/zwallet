@@ -1,10 +1,11 @@
 # ZWALLET
 
-![Zwallet Landing Page Snippet](./src/images/snippet.png)
+![Zwallet Landing Page Snippet](./src/img/snippet.png)
 
 #### Description:
 
-This project is a web-based internet-banking where the application can be use with the desktop and the mobile screen size.
-This is the first part of the project where the developer is focusing on only using pure **HTML dan CSS** languages. 
-The project contains **non-authenticated pages** (Login, Sign Up, and Reset Password), Home page, Transfer page, Transfer Input page, Transaction History page, Successfull and Failed Transfer Status pages. 
-This project is still under development. The project can be download and can be run right away. 
+This branch is the under development branch where the developer is modified most of the css styles and used bootstrap as the main library. The purpose of this branch is to make the html and css files more effectives and more code efficient.
+
+Developed by:
+Juan Tombeng
+(one man army)
